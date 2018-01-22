@@ -47,6 +47,10 @@ OSVersion: xenial
     add-apt-repository -y "deb ${MIRRORURL} ${OSVERSION}-security restricted"
 
     apt-get -y update && apt-get -y upgrade
+    apt-get install -y matplotlib
+    apt-get install -y utm
+    apt-get install -y PIL
+    apt-get install -y lmfit
 
     mkdir /cvmfs /oasis /projects /scratch
 
