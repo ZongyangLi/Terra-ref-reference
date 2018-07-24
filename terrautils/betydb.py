@@ -28,7 +28,6 @@ def get_bety_key():
     """return key from environment or ~/.betykey if it exists."""
 
     key = os.environ.get('BETYDB_KEY', '')
-    key = 'GZJZWnJpnDBhmKk7k6vb46z6lW6vjxSniRivRl2I'
     if key:
         return key
 
